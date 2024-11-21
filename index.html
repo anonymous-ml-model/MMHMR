@@ -22,47 +22,25 @@
           </div>
         </div>
       </section>
-
-    <!-- Video Card -->
-    <div class="album py-5 bg-body-tertiary">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <!-- <h3>Length Diversity</h3> -->
-            <!-- <h6>Given a text prompt, BAMM generates diverse motion sequences along with diverse sequence lengths. MoMask and MMM face challenges to generate motion with the sequence length that is different from the ground-truth length . </h6>
-            <strong>Text prompt : <span style='color:#255F83;'>“the person crouches and walks forward.”</span> (ground truth length: 196 frames). </strong>
-            <ul>
-              <li>
-                <b>BAMM:</b> Realistic, diverse crouch-walk sequences; superior in motion fidelity.
-              </li>
-            </ul> -->
-          </div>
-        </div>
-        <!-- <h4 class="mt-4">196 Frame Sequences (Ground Truth)</h4> -->
-        <!-- Section for 184 frames -->
-        <!-- Section for 156 frames -->
-        <div class="col">
-          <div class="card shadow-sm">
-            <video id="dance" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/video/sample6.mp4" type="video/mp4">
-            </video>
-            <div class="card-body">
-              <!-- <h6 class="card-text">MMM</h6> -->
-              <p>The GenHMR demo highlights our method for achieving accurate 3D human mesh reconstructions from monocular images. Key to our approach is <strong>Uncertainty-Guided Sampling</strong> (UGS), which iteratively samples high-confidence pose tokens based on their probabilistic distributions, ensuring precise and reliable 3D reconstructions. Here, we show only the initial pose estimates from UGS for 5 iterations.</p>          </div>
-              <!-- <p>lacks any crouching motion in the sequence.</p> -->
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+            <div class="col">
+              <div class="card h-100 shadow-sm"><video id="text-to-motion_mmm" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/video/sample11_.mp4" type="video/mp4">
+                </video></div>
             </div>
-
-
-            
+            <div class="col">
+              <div class="card h-100 shadow-sm"><video id="text-to-motion_gt" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/video/sample6.mp4" type="video/mp4">
+                </video></div>
+            </div>
           </div>
-
-
-
         </div>
-        
       </div>
-    </div>
+      <!-- Video Card -->
 
+      </div>
       <!-- State-of-the-Art Comparison -->
       <div class="album py-5">
         <div class="container">
@@ -71,16 +49,14 @@
           <img src="./assets/arch/mmhmr_sota_comp.png" class="img-fluid" alt="State-of-the-Art Comparison Image">
         </div>
       </div>
-
       <!-- MMHMR Training Phase renamed as MMHMR Overview -->
       <div class="album py-5">
         <div class="container">
           <h3>MMHMR Training</h3>
-          <p>MMHMR consists of two key components: (1) a <strong>Pose Tokenizer</strong> that encodes 3D hand poses into a sequence of discrete tokens within a latent space, and (2) an Image-Conditioned Masked Transformer that models the probabilistic distributions of these tokens, conditioned on the input image and a partially masked token sequence.</p>
+          <p>MMHMR consists of two key components: (1) a <strong>Pose Tokenizer</strong> that encodes 3D hand poses into a sequence of discrete tokens within a latent space, and (2) an Image-Conditioned Masked Transformer that models the probabilistic distributions of these tokens, conditioned on the input image and a partially masked token sequence. </p>
           <img src="./assets/arch/MMHMR_overview.png" class="img-fluid" alt="MMHMR Overview Image">
         </div>
       </div>
-
       <!-- MMHMR Inference Image -->
       <div class="album py-5">
         <div class="container">
@@ -88,13 +64,13 @@
           <img src="./assets/arch/MMHMR_infer.png" class="img-fluid" alt="MMHMR Inference Image">
         </div>
       </div>
-
       <!-- Confidence -->
       <div class="album py-5">
         <div class="container">
           <h3>Confidence</h3>
           <!-- Image 1 with custom bottom margin -->
-          <div class="row" style="margin-bottom: px;"> <!-- Inline style for custom spacing -->
+          <div class="row" style="margin-bottom: px;">
+            <!-- Inline style for custom spacing -->
             <div class="col-md-12">
               <img src="./assets/arch/MMHMR_iters.png" class="img-fluid" alt="Confidence Image Iteration 1">
             </div>
@@ -107,18 +83,14 @@
           </div>
         </div>
       </div>
-      
-      
-
       <!-- Inwild Images now shows MMHMR Training -->
       <div class="album py-5">
         <div class="container">
           <h3>Inwild Images</h3>
-          <p>Previously described as MMHMR Training now includes: MMHMR consists of two key components: (1) a <strong>Pose Tokenizer</strong> that encodes 3D hand poses into a sequence of discrete tokens within a latent space, and (2) an Image-Conditioned Masked Transformer that models the probabilistic distributions of these tokens, conditioned on the input image and a partially masked token sequence.</p>
+          <p>Previously described as MMHMR Training now includes: MMHMR consists of two key components: (1) a <strong>Pose Tokenizer</strong> that encodes 3D hand poses into a sequence of discrete tokens within a latent space, and (2) an Image-Conditioned Masked Transformer that models the probabilistic distributions of these tokens, conditioned on the input image and a partially masked token sequence. </p>
           <img src="./assets/arch/MMHMR_landing.png" class="img-fluid" alt="Inwild Images">
         </div>
       </div>
-
       <!-- Qualitative Results on Challenging Poses renamed to Hint Benchmark -->
       <div class="album py-5">
         <div class="container">
@@ -126,7 +98,6 @@
           <img src="./assets/arch/MMHMR_chall_poses_3d.png" class="img-fluid" alt="Hint Benchmark Image">
         </div>
       </div>
-
       <!-- More Results section with three parts -->
       <div class="album py-5">
         <div class="container">
@@ -147,7 +118,6 @@
           </div>
         </div>
       </div>
-
       <!-- Our Inference Strategy -->
       <div class="album py-5">
         <div class="container">
@@ -155,7 +125,6 @@
           <p style="font-size: 1.2em;">Our inference strategy comprises two key stages: (1) Uncertainty-Guided Sampling, which iteratively samples high-confidence pose tokens based on their probabilistic distributions, and (2) 2D Pose-Guided Refinement, which fine-tunes the sampled pose tokens to further minimize 3D reconstruction uncertainty by ensuring consistency between the 3D body mesh and 2D pose estimates.</p>
         </div>
       </div>
-
     </main>
     <footer class="text-body-secondary py-5">
       <div class="container">
