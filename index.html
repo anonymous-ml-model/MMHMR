@@ -136,6 +136,44 @@
           </div>
         </div>
       </div>
+
+
+
+      <div id="carouselHint" class="carousel slide py-5">
+        <div class="container">
+          <h3 class="text-center">HINT Benchmark: Challenging Poses in Wild</h3>
+          <!-- Carousel Inner -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img src="./assets/arch/hint/MMHMR_chall_poses_3d_1.png" class="d-block w-100 img-fluid" alt="HINT Challenging Pose 1">
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img src="./assets/arch/hint/MMHMR_chall_poses_3d_2.png" class="d-block w-100 img-fluid" alt="HINT Challenging Pose 2">
+            </div>
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <img src="./assets/arch/hint/MMHMR_chall_poses_3d_3.png" class="d-block w-100 img-fluid" alt="HINT Challenging Pose 3">
+            </div>
+          </div>
+          <!-- Navigation Buttons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHint" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselHint" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <!-- Slide Indicators -->
+          <div class="d-flex justify-content-center mt-4">
+            <button type="button" data-bs-target="#carouselHint" data-bs-slide-to="0" class="active btn btn-outline-primary mx-1" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselHint" data-bs-slide-to="1" class="btn btn-outline-primary mx-1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselHint" data-bs-slide-to="2" class="btn btn-outline-primary mx-1" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </div>
       
       <div id="carouselExample2" class="carousel slide py-5">
         <div class="container">
@@ -178,7 +216,7 @@
         </div>
       </div>
 
-
+      
 
       <div id="carouselControlnet" class="carousel slide py-5">
         <div class="container">
@@ -212,106 +250,10 @@
       </div>
       
 
-      <div id="carouselHint" class="carousel slide py-5">
-        <div class="container">
-          <h3 class="text-center">HINT: Challenging Poses in 3D</h3>
-          <!-- Carousel Inner -->
-          <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <img src="./assets/arch/hint/MMHMR_chall_poses_3d_1.png" class="d-block w-100 img-fluid" alt="HINT Challenging Pose 1">
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-              <img src="./assets/arch/hint/MMHMR_chall_poses_3d_2.png" class="d-block w-100 img-fluid" alt="HINT Challenging Pose 2">
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-item">
-              <img src="./assets/arch/hint/MMHMR_chall_poses_3d_3.png" class="d-block w-100 img-fluid" alt="HINT Challenging Pose 3">
-            </div>
-          </div>
-          <!-- Navigation Buttons -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselHint" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselHint" data-bs-slide="next">
-            <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <!-- Slide Indicators -->
-          <div class="d-flex justify-content-center mt-4">
-            <button type="button" data-bs-target="#carouselHint" data-bs-slide-to="0" class="active btn btn-outline-primary mx-1" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselHint" data-bs-slide-to="1" class="btn btn-outline-primary mx-1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselHint" data-bs-slide-to="2" class="btn btn-outline-primary mx-1" aria-label="Slide 3"></button>
-          </div>
-        </div>
-      </div>
-      
+
 
       
-      
-      <!-- Confidence -->
-      <div class="album py-5">
-        <div class="container">
-          <h3>Confidence</h3>
-          <!-- Image 1 with custom bottom margin -->
-          <div class="row" style="margin-bottom: px;">
-            <!-- Inline style for custom spacing -->
-            <div class="col-md-12">
-              <img src="./assets/arch/SOTA_image_1.png" class="img-fluid" alt="Confidence Image Iteration 1">
-            </div>
-          </div>
-          <!-- Image 2 -->
-          <div class="row">
-            <div class="col-md-12">
-              <img src="./assets/arch/SOTA_image_2.png" class="img-fluid" alt="Confidence Image Iteration 2">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Inwild Images now shows MMHMR Training -->
-      <div class="album py-5">
-        <div class="container">
-          <h3>Inwild Images</h3>
-          <p>Previously described as MMHMR Training now includes: MMHMR consists of two key components: (1) a <strong>Pose Tokenizer</strong> that encodes 3D hand poses into a sequence of discrete tokens within a latent space, and (2) an Image-Conditioned Masked Transformer that models the probabilistic distributions of these tokens, conditioned on the input image and a partially masked token sequence. </p>
-          <img src="./assets/arch/MMHMR_landing.png" class="img-fluid" alt="Inwild Images">
-        </div>
-      </div>
-      <!-- Qualitative Results on Challenging Poses renamed to Hint Benchmark -->
-      <div class="album py-5">
-        <div class="container">
-          <h3>Hint Benchmark</h3>
-          <img src="./assets/arch/MMHMR_chall_poses_3d.png" class="img-fluid" alt="Hint Benchmark Image">
-        </div>
-      </div>
-      <!-- More Results section with three parts -->
-      <div class="album py-5">
-        <div class="container">
-          <h3>More Results</h3>
-          <div class="row">
-            <div class="col-md-4">
-              <h4>Confidence</h4>
-              <img src="./assets/challenging_poses/MMHMR_confidence.png" class="img-fluid" alt="Confidence Image">
-            </div>
-            <div class="col-md-4">
-              <h4>Inwild</h4>
-              <img src="./assets/challenging_poses/MMHMR_inwild.png" class="img-fluid" alt="Inwild Image">
-            </div>
-            <div class="col-md-4">
-              <h4>Failure Cases</h4>
-              <img src="./assets/challenging_poses/MMHMR_failure_cases.png" class="img-fluid" alt="Failure Cases Image">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Our Inference Strategy -->
-      <div class="album py-5">
-        <div class="container">
-          <h3>Our Inference Strategy</h3>
-          <p style="font-size: 1.2em;">Our inference strategy comprises two key stages: (1) Uncertainty-Guided Sampling, which iteratively samples high-confidence pose tokens based on their probabilistic distributions, and (2) 2D Pose-Guided Refinement, which fine-tunes the sampled pose tokens to further minimize 3D reconstruction uncertainty by ensuring consistency between the 3D body mesh and 2D pose estimates.</p>
-        </div>
-      </div>
+
     </main>
     <footer class="text-body-secondary py-5">
       <div class="container">
