@@ -23,18 +23,46 @@
         </div>
       </section>
 
-      <div class="album py-5">
-        <div class="container">
-          <!-- Card with Video -->
-          <div class="card mb-4 shadow-sm"> <!-- Card component with shadow and bottom margin -->
-            <div class="card-body">
-              <video controls class="img-fluid"> <!-- Controls added, and img-fluid class for responsiveness -->
-                <source src="./assets/videos/sample6.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
+    <!-- Video Card -->
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!-- <h3>Length Diversity</h3> -->
+            <!-- <h6>Given a text prompt, BAMM generates diverse motion sequences along with diverse sequence lengths. MoMask and MMM face challenges to generate motion with the sequence length that is different from the ground-truth length . </h6>
+            <strong>Text prompt : <span style='color:#255F83;'>“the person crouches and walks forward.”</span> (ground truth length: 196 frames). </strong>
+            <ul>
+              <li>
+                <b>BAMM:</b> Realistic, diverse crouch-walk sequences; superior in motion fidelity.
+              </li>
+            </ul> -->
           </div>
-                
+        </div>
+        <!-- <h4 class="mt-4">196 Frame Sequences (Ground Truth)</h4> -->
+        <!-- Section for 184 frames -->
+        <!-- Section for 156 frames -->
+        <div class="col">
+          <div class="card shadow-sm">
+            <video id="dance" autoplay controls muted loop playsinline height="100%">
+              <source src="./assets/video/sample6.mp4" type="video/mp4">
+            </video>
+            <div class="card-body">
+              <!-- <h6 class="card-text">MMM</h6> -->
+              <p>The GenHMR demo highlights our method for achieving accurate 3D human mesh reconstructions from monocular images. Key to our approach is <strong>Uncertainty-Guided Sampling</strong> (UGS), which iteratively samples high-confidence pose tokens based on their probabilistic distributions, ensuring precise and reliable 3D reconstructions. Here, we show only the initial pose estimates from UGS for 5 iterations.</p>          </div>
+              <!-- <p>lacks any crouching motion in the sequence.</p> -->
+            </div>
+
+
+            
+          </div>
+
+
+
+        </div>
+        
+      </div>
+    </div>
+
       <!-- State-of-the-Art Comparison -->
       <div class="album py-5">
         <div class="container">
