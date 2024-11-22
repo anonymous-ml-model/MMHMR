@@ -260,6 +260,43 @@
       .carousel-control-next {
         margin: 0 20px;
       }
+
+      .btn-outline-primary {
+        margin: 0 5px;
+        min-width: 30px;
+        min-height: 30px;
+        padding: 5px 10px;
+        border-radius: 50%;
+        background-color: transparent;
+        border-color: #741906;
+        color: #741906;
+      }
+
+      /* Active state for button indicators */
+      .btn-outline-primary[aria-current="true"],
+      .btn-outline-primary.active {
+        background-color: #741906 !important;
+        color: white !important;
+        border-color: #741906 !important;
+      }
+
+      /* Hover effect for non-active indicators */
+      .btn-outline-primary:not(.active):hover {
+        background-color: rgba(116, 25, 6, 0.1);
+        border-color: #741906;
+        color: #741906;
+      }
+
+      /* Override any Bootstrap default styles */
+      .btn-outline-primary:focus,
+      .btn-outline-primary:active {
+        box-shadow: 0 0 0 0.25rem rgba(116, 25, 6, 0.25) !important;
+      }
+
+      /* Make sure transitions are smooth */
+      .btn-outline-primary {
+        transition: all 0.3s ease;
+      }
     </style>
   </head>
   <body>
