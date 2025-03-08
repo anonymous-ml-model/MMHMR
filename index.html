@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MMHMR: Generative Masked Modeling for Hand Mesh Recovery</title>
+    <title>MaskHand: Generative Masked Modeling for Robust Hand Mesh Reconstruction in the Wild</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
@@ -233,17 +233,17 @@
           </div>
           <section class="py-4 text-center container">
             <h5>
-              <strong>Our demo videos showcase MMHMR's ability to reconstruct highly accurate and realistic 3D hand meshes from single RGB images, overcoming challenges like complex articulations, self-occlusions, and depth ambiguities.</strong>
+              <strong>Our demo videos showcase MaskHand's ability to reconstruct highly accurate and realistic 3D hand meshes from single RGB images, overcoming challenges like complex articulations, self-occlusions, and depth ambiguities.</strong>
             </h5>
           </section>
         </div>
       </div>
       <div class="album py-5" style="background-color: #f8f9fa;">
         <div class="container">
-          <h3 class="text-center">MMHMR Training</h3>
+          <h3 class="text-center">MaskHand Training</h3>
           <p>
-            <strong>MMHMR <em>Training Phase</em>
-            </strong>. MMHMR consists of two key components: (1) <strong>VQ-MANO</strong>, which encodes 3D hand poses into a sequence of discrete tokens within a latent space, and (2) a <strong>Context-Guided Masked Transformer</strong> that models the probabilistic distributions of these tokens, conditioned on the input image, 2D pose cues, and a partially masked token sequence.
+            <strong>MaskHand <em>Training Phase</em>
+            </strong>. MaskHand consists of two key components: (1) <strong>VQ-MANO</strong>, which encodes 3D hand poses into a sequence of discrete tokens within a latent space, and (2) a <strong>Context-Guided Masked Transformer</strong> that models the probabilistic distributions of these tokens, conditioned on the input image, 2D pose cues, and a partially masked token sequence.
           </p>
           <img src="./assets/arch/MMHMR_overview.png" class="img-fluid" alt="MMHMR Overview Image">
         </div>
