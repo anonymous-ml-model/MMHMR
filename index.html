@@ -323,9 +323,10 @@
 
       <div id="carouselExampleIndicators4" class="carousel slide py-5" data-bs-ride="carousel">
         <div class="container">
-          <h3 class="text-center">Impact of most Confident Tokens</h3>
+          <h3 class="text-center">Impact of confidence-ranked hypotheses</h3>
           <h6 class="text-center">
-            <strong>Impact of pose token confidence on MMHMR's reconstruction accuracy and diversity in occluded regions.</strong> The figure compares 3D hand meshes using the 1st, 7th, 10th, 100th, 250th, and 1000th most confident tokens. Higher-confidence tokens yield accurate reconstructions, while lower-confidence ones introduce variations, demonstrating how MMHMR captures uncertainty and generates diverse reconstructions, especially in occluded regions.
+            Impact of confidence-ranked hypotheses on MaskHand's 3D hand mesh reconstruction. The figure shows occluded scenario reconstructions ranked by confidence, where higher-confidence hypotheses yield accurate, high-fidelity meshes. As confidence decreases (100th to 1000th hypothesis), distortions and unrealistic poses emerge, highlighting the need to prioritize high-confidence predictions for robust reconstruction.
+
           </h6>
           <!-- Indicators -->
           <div class="carousel-indicators">
